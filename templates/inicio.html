@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <img src="{{ url_for('static', filename='img/imagen1.jpeg') }}" alt="Descripción de la imagen 1">
+    <img src="{{ url_for('static', filename='img/imagen2.jpeg') }}" alt="Descripción de la imagen 2">
+    <img src="{{ url_for('static', filename='img/imagen3.jpeg') }}"magen 3">
+    <img src="{{ url_for('static', filename='img/imagen4.jpeg') }}" alt="Descripción de la imagen 4">
+    <img src="{{ url_for('static', filename='img/imagen5.jpeg') }}" alt="Descripción de la imagen 5">
+    <img src="{{ url_for('static', filename='img/imagen6.jpeg') }}" alt="Descripción de la imagen 6">
+  </div>
+
+  <button type="button" class="carousel-prev">&#10094;</button>
+  <button type="button" class="carousel-next">&#10095;</button>
+
+  <div class="carousel-indicators"></div>
+</div>
+
+{% endblock %}

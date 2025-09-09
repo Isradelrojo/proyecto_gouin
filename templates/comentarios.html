@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Comentarios</h1>
+
+  <form method="POST" class="comment-form">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <textarea name="comment" placeholder="Escribe tu comentario" required></textarea>
+    <label for="rating">Calificación:</label>
+    <select name="rating" required>
+      <option value="5">⭐⭐⭐⭐⭐</option>
+      <option value="4">⭐⭐⭐⭐</option>
+      <option value="3">⭐⭐⭐</option>
+      <option value="2">⭐⭐</option>
+      <option value="1">⭐</option>
+    </select>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <section class="comments-grid">
+    {% for c in comments %}
+      <div class="comment-card">
+        <h3>{{ c['name'] }}</h3>
+        <p class="stars">{% for i in range(c['rating']) %}⭐{% endfor %}</p>
+        <p>{{ c['comment'] }}</p>
+        <small>{{ c['created_at'] }}</small>
+      </div>
+    {% endfor %}
+    
+  </section>
+{% endblock %}  
