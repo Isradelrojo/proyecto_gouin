@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --bg: #f5f5f5;
   --card-bg: #ffffff;
   --text: #333333;
@@ -97,9 +97,9 @@ footer p {
 } 
 
 
-
+/*
 /* styles.css */
-.whatsapp-button {
+/*.whatsapp-button {
   position: fixed;
   bottom: 11%;
   right: 1%;
@@ -141,14 +141,14 @@ footer p {
 
 
 
-.cards-section {
+/*.cards-section {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   bottom: 120px;
 }
 
-.comentarios {
+/*.comentarios {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -156,7 +156,7 @@ footer p {
 }
 
 
-.cards {
+/*.cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -164,19 +164,470 @@ footer p {
 
 
 /* Tablet: 2 columnas */
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Celular: 1 columna */
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
   .cards {
     grid-template-columns: 1fr;
   }
 }
 
+
+/*.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/*.card-body {
+  padding: 1rem;
+}
+
+
+/*.card-body h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+/*.card-body p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+
+
+
+
+/*h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*.comment-form {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/*.comment-form input,
+.comment-form textarea,
+.comment-form select,
+.comment-form button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/*.comment-form button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/*.comment-form button:hover {
+  background: #7a2424;
+}
+
+/*.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/*.comment-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  transition: transform 0.3s ease;
+}
+
+/*.comment-card:hover {
+  transform: translateY(-5px);
+}
+
+/*.comment-card h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/*.stars {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+/*@media (max-width: 1024px) {
+  .comments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*@media (max-width: 640px) {
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Fin estilos para local */
+
+/* Estilos para inicio */
+
+/*.carousel-container {
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tus preferencias */
+  /* Reemplaza la altura */
+  /*height: 450px; /* Define una altura fija que se adapte a tus imágenes */
+  /*margin: auto;
+  margin-top: 120px;
+  overflow: hidden;
+  position: relative;
+  @media(max-width: 670px) {
+    height: 300px; /* Altura menor para pantallas pequeñas */
+  /*  margin-top: 50px;
+  }
+}
+
+/*.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%; /* Asegura que el slide ocupe toda la altura del contenedor */
+/*}
+
+/*.carousel-slide img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%; /* Las imágenes ahora se ajustan a la altura del contenedor del slide */
+  /*object-fit: cover;
+}
+
+/*.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+}
+
+/*.carousel-prev {
+  left: 10px;
+}
+
+/*.carousel-next {
+  right: 10px;
+}
+
+/*@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .carousel-container {
+    /* Ajusta el alto del carrusel para que no ocupe demasiado espacio vertical */
+   /* height: 250px; 
+    margin-top: 30px;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    /* Reduce el tamaño de los botones de navegación */
+   /* font-size: 18px;
+    padding: 8px;
+  }
+}*/
+
+
+/*@media only screen and (min-width: 481px) and (max-width: 900px) and (orientation: landscape) {
+  .carousel-container {
+    /* Optimiza el alto para aprovechar el espacio horizontal */
+/*    height: 350px;
+    margin-top: 50px;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    /* Los botones pueden ser un poco más grandes que en vertical */
+/*    font-size: 20px;
+  }
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .carousel-container {
+    /* Aumenta la altura para aprovechar el espacio de la tablet */
+   /* height: 400px;
+    margin-top: 80px;
+  }
+}*/
+
+/*@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+  .carousel-container {
+    /* Vuelve a la altura original o un valor similar al de tu diseño de escritorio */
+/*    height: 450px;
+    margin-top: 120px;
+  }
+} */
+
+
+/* --- Variables y Estilos Base --- */
+:root {
+  --bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --text: #333333;
+  --muted: #666666;
+  --primary: #22c55e;
+  --accent: #f59e0b;
+  --border: #dddddd;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --primary-color: #a83232;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  top: 150px; /* Ajustado a la altura del header */
+  flex-grow: 1;
+}
+
+.inactivo {
+  display: none;
+}
+
+/* --- Estilos del Header --- */
+header {
+  background-color: #2c2a2a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  color: #f3f0f0;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--primary-color);
+}
+
+header .logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 30px 40px;
+}
+
+header .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+/* --- Botón de Menú para Móviles --- */
+.menu-toggle {
+  display: none; /* Oculto por defecto en escritorio */
+  background: none;
+  border: none;
+  color: #f3f0f0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav {
+  display: block;
+}
+
+/* Esto es para el menu hamburguesa */
+
+/* --- Media Queries --- */
+@media (max-width: 1024px) {
+  /* Tablet: 2 columnas */
+  .cards,
+  .comments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para Celulares y Tablets */
+  header {
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+  }
+
+  .nav {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #2c2a2a;
+    border-top: 1px solid #444;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-toggle {
+    display: block; /* Muestra el botón de hamburguesa */
+  }
+
+  .carousel-container {
+    height: 250px;
+    margin-top: 120px; /* Ajuste para el header más pequeño */
+  }
+}
+
+@media (max-width: 640px) {
+  /* Celular: 1 columna */
+  .cards,
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-container {
+    height: 200px;
+  }
+}
+
+
+/* --- Estilos de Carrusel --- */
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: auto;
+  margin-top: 150px; /* Ajustado para que no se superponga con el header */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* --- Estilos de Secciones --- */
+.cards-section,
+.comentarios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  top: 120px; /* Ya no es necesario, lo manejamos con el margin-top del main */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* --- Estilos de Cards y Comentarios --- */
+.cards,
+.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 
 .card {
   background: var(--card-bg);
@@ -187,12 +638,10 @@ footer p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .card img {
   width: 100%;
@@ -201,11 +650,9 @@ footer p {
   display: block;
 }
 
-
 .card-body {
   padding: 1rem;
 }
-
 
 .card-body h3 {
   margin-top: 0;
@@ -213,20 +660,10 @@ footer p {
   font-size: 1.2rem;
 }
 
-
 .card-body p {
   margin: 0 0 1rem;
   color: var(--muted);
   font-size: 0.95rem;
-}
-
-
-
-
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 .comment-form {
@@ -258,12 +695,6 @@ h1 {
   background: #7a2424;
 }
 
-.comments-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
 .comment-card {
   background: var(--card-bg);
   padding: 1rem;
@@ -286,68 +717,49 @@ h1 {
   color: gold;
 }
 
-@media (max-width: 1024px) {
-  .comments-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .comments-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* Fin estilos para local */
-
-/* Estilos para inicio */
-
-.carousel-container {
-  width: 100%;
-  max-width: 800px; /* Ajusta este valor según tus preferencias */
-  /* Reemplaza la altura */
-  height: 450px; /* Define una altura fija que se adapte a tus imágenes */
-  margin: auto;
-  margin-top: 120px;
-  overflow: hidden;
-  position: relative;
-  @media(max-width: 670px) {
-    height: 300px; /* Altura menor para pantallas pequeñas */
-    margin-top: 50px;
-  }
-}
-
-.carousel-slide {
+.whatsapp-button {
+  position: fixed;
+  bottom: 11%;
+  right: 1%;
+  text-decoration: none;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  height: 100%; /* Asegura que el slide ocupe toda la altura del contenedor */
+  gap: 10px;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  padding: 10px; /* Agregado para hacer el botón más robusto */
 }
 
-.carousel-slide img {
-  width: 100%;
-  flex-shrink: 0;
-  height: 100%; /* Las imágenes ahora se ajustan a la altura del contenedor del slide */
-  object-fit: cover;
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+.whatsapp-button p {
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 24px;
+  white-space: nowrap;
+  font-size: 18px;
+  margin: 0; /* Reiniciado el margen para un mejor control */
 }
 
-.carousel-prev {
-  left: 10px;
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
 }
 
-.carousel-next {
-  right: 10px;
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 5px 15px;
+  font-size: 14px;
+  width: 100%;
 }

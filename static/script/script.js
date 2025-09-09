@@ -351,3 +351,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Inicia el carrusel al cargar la página
   startAutoSlide();
 });
+
+
+/* Menu toogle */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+});
