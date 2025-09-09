@@ -1,405 +1,6 @@
-/* :root {
-  --bg: #f5f5f5;
-  --card-bg: #ffffff;
-  --text: #333333;
-  --muted: #666666;
-  --primary: #22c55e;
-  --accent: #f59e0b;
-  --border: #dddddd;
-  --radius: 12px;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --card-shadow: rgba(0, 0, 0, 0.1);
-  --primary-color: #a83232;
-}
-
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  background: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-}
-
-
-main {
-  position: relative;
-  top: 120px;
-  flex-grow: 1;
-}
-
-header {
-  background-color: #2c2a2a;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 150px;
-  width: 100vw;
-  position: fixed;
-  top: 0; 
-  z-index: 1000;
-}
-
-header a {
-
-  color: rgb(243, 240, 240);
-  text-decoration: none;
-  font-size: 18px;
-}
-
-header img {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
-}
-
-header .nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-  justify-content: space-between;
-}
-
-header .logo img {
-  border-radius: 30px 40px;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-}
-
-footer p {
-  margin: 5px 15px;
-  font-size: 14px;
-  width: 100%;
-}
-
-.como_llegar {
-  height: 100vh;
-}
-
-.inactivo {
-  display: none;
-} 
-
-
-/*
-/* styles.css */
-/*.whatsapp-button {
-  position: fixed;
-  bottom: 11%;
-  right: 1%;
-  text-decoration: none;
-  background-color: #25D366;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-button p {
-  color: white;
-  white-space: nowrap;
-  font-size: 18px;
-  margin-left: 8px;
-}
-
-.whatsapp-button img {
-  width: 35px;
-  height: 35px;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.1);
-}
-
-/* Fin styles.css */
-
-
-
-/* Estilos para local */
-
-
-
-
-
-
-/*.cards-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  bottom: 120px;
-}
-
-/*.comentarios {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  bottom: 120px;
-}
-
-
-/*.cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-
-/* Tablet: 2 columnas */
-/*@media (max-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Celular: 1 columna */
-/*@media (max-width: 640px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/*.card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-/*.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/*.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-}
-
-
-/*.card-body {
-  padding: 1rem;
-}
-
-
-/*.card-body h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-
-/*.card-body p {
-  margin: 0 0 1rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-
-
-
-
-/*h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/*.comment-form {
-  max-width: 500px;
-  margin: 0 auto 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/*.comment-form input,
-.comment-form textarea,
-.comment-form select,
-.comment-form button {
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-/*.comment-form button {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-/*.comment-form button:hover {
-  background: #7a2424;
-}
-
-/*.comments-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-/*.comment-card {
-  background: var(--card-bg);
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px var(--card-shadow);
-  transition: transform 0.3s ease;
-}
-
-/*.comment-card:hover {
-  transform: translateY(-5px);
-}
-
-/*.comment-card h3 {
-  margin-top: 0;
-  color: var(--primary-color);
-}
-
-/*.stars {
-  font-size: 1.2rem;
-  color: gold;
-}
-
-/*@media (max-width: 1024px) {
-  .comments-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/*@media (max-width: 640px) {
-  .comments-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* Fin estilos para local */
-
-/* Estilos para inicio */
-
-/*.carousel-container {
-  width: 100%;
-  max-width: 800px; /* Ajusta este valor según tus preferencias */
-  /* Reemplaza la altura */
-  /*height: 450px; /* Define una altura fija que se adapte a tus imágenes */
-  /*margin: auto;
-  margin-top: 120px;
-  overflow: hidden;
-  position: relative;
-  @media(max-width: 670px) {
-    height: 300px; /* Altura menor para pantallas pequeñas */
-  /*  margin-top: 50px;
-  }
-}
-
-/*.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  height: 100%; /* Asegura que el slide ocupe toda la altura del contenedor */
-/*}
-
-/*.carousel-slide img {
-  width: 100%;
-  flex-shrink: 0;
-  height: 100%; /* Las imágenes ahora se ajustan a la altura del contenedor del slide */
-  /*object-fit: cover;
-}
-
-/*.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 24px;
-}
-
-/*.carousel-prev {
-  left: 10px;
-}
-
-/*.carousel-next {
-  right: 10px;
-}
-
-/*@media only screen and (max-width: 480px) and (orientation: portrait) {
-  .carousel-container {
-    /* Ajusta el alto del carrusel para que no ocupe demasiado espacio vertical */
-   /* height: 250px; 
-    margin-top: 30px;
-  }
-  
-  .carousel-prev,
-  .carousel-next {
-    /* Reduce el tamaño de los botones de navegación */
-   /* font-size: 18px;
-    padding: 8px;
-  }
-}*/
-
-
-/*@media only screen and (min-width: 481px) and (max-width: 900px) and (orientation: landscape) {
-  .carousel-container {
-    /* Optimiza el alto para aprovechar el espacio horizontal */
-/*    height: 350px;
-    margin-top: 50px;
-  }
-  
-  .carousel-prev,
-  .carousel-next {
-    /* Los botones pueden ser un poco más grandes que en vertical */
-/*    font-size: 20px;
-  }
-}
-
-/*@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .carousel-container {
-    /* Aumenta la altura para aprovechar el espacio de la tablet */
-   /* height: 400px;
-    margin-top: 80px;
-  }
-}*/
-
-/*@media only screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
-  .carousel-container {
-    /* Vuelve a la altura original o un valor similar al de tu diseño de escritorio */
-/*    height: 450px;
-    margin-top: 120px;
-  }
-} */
-
-
-/* --- Variables y Estilos Base --- */
+/* ================================== */
+/* Variables CSS             */
+/* ================================== */
 :root {
   --bg: #f5f5f5;
   --card-bg: #ffffff;
@@ -412,13 +13,17 @@ footer p {
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --card-shadow: rgba(0, 0, 0, 0.1);
   --primary-color: #a83232;
+  --header-bg: #2c2a2a;
 }
 
+/* ================================== */
+/* Estilos Generales           */
+/* ================================== */
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: var(--bg);
   color: var(--text);
   display: flex;
@@ -427,18 +32,19 @@ body {
 }
 
 main {
-  position: relative;
-  top: 150px; /* Ajustado a la altura del header */
   flex-grow: 1;
+  padding-top: 150px; /* Ajuste para el header fijo */
 }
 
 .inactivo {
   display: none;
 }
 
-/* --- Estilos del Header --- */
+/* ================================== */
+/* Estilos del Header          */
+/* ================================== */
 header {
-  background-color: #2c2a2a;
+  background-color: var(--header-bg);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -447,6 +53,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
 }
 
 header a {
@@ -474,9 +82,11 @@ header .nav ul {
   gap: 15px;
 }
 
-/* --- Botón de Menú para Móviles --- */
+/* ================================== */
+/* Menú Hamburguesa Móvil         */
+/* ================================== */
 .menu-toggle {
-  display: none; /* Oculto por defecto en escritorio */
+  display: none;
   background: none;
   border: none;
   color: #f3f0f0;
@@ -489,86 +99,15 @@ header .nav ul {
   display: block;
 }
 
-/* Esto es para el menu hamburguesa */
-
-/* --- Media Queries --- */
-@media (max-width: 1024px) {
-  /* Tablet: 2 columnas */
-  .cards,
-  .comments-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  /* Estilos para Celulares y Tablets */
-  header {
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 100px;
-  }
-
-  .nav {
-    display: none; /* Oculta el menú por defecto */
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    background-color: #2c2a2a;
-    border-top: 1px solid #444;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav.active {
-    display: flex; /* Muestra el menú cuando está activo */
-  }
-
-  .nav ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .nav ul li {
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #444;
-  }
-
-  .nav ul li:last-child {
-    border-bottom: none;
-  }
-  
-  .menu-toggle {
-    display: block; /* Muestra el botón de hamburguesa */
-  }
-
-  .carousel-container {
-    height: 250px;
-    margin-top: 120px; /* Ajuste para el header más pequeño */
-  }
-}
-
-@media (max-width: 640px) {
-  /* Celular: 1 columna */
-  .cards,
-  .comments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .carousel-container {
-    height: 200px;
-  }
-}
-
-
-/* --- Estilos de Carrusel --- */
+/* ================================== */
+/* Estilos del Carrusel        */
+/* ================================== */
 .carousel-container {
   width: 100%;
   max-width: 800px;
   height: 450px;
   margin: auto;
-  margin-top: 150px; /* Ajustado para que no se superponga con el header */
+  margin-top: 150px; /* Ajustado para no superponerse con el header */
   overflow: hidden;
   position: relative;
 }
@@ -607,26 +146,114 @@ header .nav ul {
   right: 10px;
 }
 
-/* --- Estilos de Secciones --- */
+
+/* ================================== */
+/* Media Queries (Ajustes para el Carrusel) */
+/* ================================== */
+
+/* Móviles y tabletas (portrait y landscape) */
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  main {
+    padding-top: 100px;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    border-top: 1px solid #444;
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* AJUSTE CLAVE PARA EL MÓVIL Y TABLET */
+  .carousel-container {
+    margin-top: 100px; /* Ajuste para el header más pequeño */
+    height: 40vh; /* Altura del 40% de la altura de la pantalla (Viewport Height) */
+    max-height: 350px; /* Limita la altura máxima en dispositivos con pantallas muy altas */
+  }
+  
+  .cards,
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Móviles pequeños (para asegurar que la imagen nunca sea demasiado pequeña) */
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 45vw; /* Usa el 45% del ancho de la pantalla (Viewport Width) para mantener una relación de aspecto */
+    max-height: 250px;
+  }
+}
+
+/* Landscape View (Orientación Horizontal de Móviles y Tablets) */
+/* Esta media query se activará cuando la altura de la pantalla sea menor que el ancho. */
+@media (orientation: landscape) and (max-width: 900px) {
+    .carousel-container {
+        /* Reduce la altura para que la imagen quepa en la pantalla horizontal */
+        height: 65vh; 
+        max-height: 400px;
+    }
+}
+
+/* ================================== */
+/* Estilos de Secciones          */
+/* ================================== */
 .cards-section,
 .comentarios {
   max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  top: 120px; /* Ya no es necesario, lo manejamos con el margin-top del main */
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-h1 {
+h1,
+h2,
+.title {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-/* --- Estilos de Cards y Comentarios --- */
-.cards,
-.comments-grid {
+/* ================================== */
+/* Estilos de las Cards        */
+/* ================================== */
+.cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 1rem 0;
 }
 
 .card {
@@ -636,6 +263,8 @@ h1 {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -643,27 +272,78 @@ h1 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
+.card__media {
+  position: relative;
+}
+
+.card__image {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-.card-body {
+.card__body {
   padding: 1rem;
+  flex-grow: 1; /* Permite que el cuerpo de la tarjeta se estire */
+  display: flex;
+  flex-direction: column;
 }
 
-.card-body h3 {
+.card__title {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card-body p {
+.rating {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.card__desc {
   margin: 0 0 1rem;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto; /* Empuja los chips al final de la tarjeta */
+}
+
+.chip {
+  background-color: #e0e0e0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ================================== */
+/* Estilos de Comentarios y Footer  */
+/* ================================== */
+.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .comment-form {
@@ -730,14 +410,14 @@ h1 {
   align-items: center;
   z-index: 1000;
   transition: transform 0.3s ease;
-  padding: 10px; /* Agregado para hacer el botón más robusto */
+  padding: 10px;
 }
 
 .whatsapp-button p {
   color: white;
   white-space: nowrap;
   font-size: 18px;
-  margin: 0; /* Reiniciado el margen para un mejor control */
+  margin: 0;
 }
 
 .whatsapp-button img {
@@ -761,5 +441,79 @@ footer {
 footer p {
   margin: 5px 15px;
   font-size: 14px;
-  width: 100%;
+}
+
+/* ================================== */
+/* Media Queries             */
+/* ================================== */
+/* Tablet y pantallas grandes (landscape) */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Móviles y tabletas (portrait) */
+@media (max-width: 768px) {
+  header {
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  main {
+    padding-top: 100px;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    border-top: 1px solid #444;
+  }
+  
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .carousel-container {
+    margin-top: 100px; /* Ajuste para el header más pequeño */
+    height: 250px;
+  }
+  
+  .cards,
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 200px;
+  }
 }

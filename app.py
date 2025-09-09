@@ -41,7 +41,7 @@ def comentarios():
 #@app.route('/')
 #def home():
 #    return render_template('base.html') 
-
+@app.route('/')
 @app.route('/inicio')
 def inicio():
     return render_template('inicio.html') 
